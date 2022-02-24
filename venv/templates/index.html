@@ -1,26 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Rate your service</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div class="container">
-      <img src="/static/kisspng-logo-royalty-free-waffen-ss-runic-insignia-of-the-5af395873a6e41.5002265515259129672393.jpg" alt="">
+      <img
+        src="/static/kisspng-logo-royalty-free-waffen-ss-runic-insignia-of-the-5af395873a6e41.5002265515259129672393.jpg"
+        alt=""
+      />
       {% if message %}
-        <p class="message">{{message | safe}}</p>
+      <p class="message">{{message | safe}}</p>
       {% endif %}
 
       <form action="/submit" method="POST">
         <div class="form-group">
           <h3>Customer Name</h3>
-          <input type="text" name="customer" id="cus" placeholder="Name of the vehicle owner">
-
+          <input
+            type="text"
+            name="customer"
+            id="cus"
+            placeholder="Name of the vehicle owner"
+          />
         </div>
         <div class="form-group">
           <h3>Dealer</h3>
@@ -30,34 +45,59 @@
             <option value="karen Swanson">karen Swanson</option>
             <option value="Jim Johnson">Jim Johnson</option>
             <option value="shuna Gifford">shuna Gifford</option>
+            <option value="shuna Gifford">sintayehu sermessa</option>
           </select>
         </div>
         <div class="form-group">
           <h3>Rate your Dealer</h3>
-          <input type="radio" name="rating" value="1"> 1
-          <input type="radio" name="rating" value="2"> 2
-          <input type="radio" name="rating" value="3"> 3
-          <input type="radio" name="rating" value="4"> 4
-           <input type="radio" name="rating" value="5"> 5
-          <input type="radio" name="rating" value="6"> 6
-          <input type="radio" name="rating" value="7"> 7
-          <input type="radio" name="rating" value="8"> 8
-          <input type="radio" name="rating" value="9"> 9
-          <input type="radio" name="rating" value="10" checked> 10
+          <input type="radio" name="rating" value="1" /> 1
+          <input type="radio" name="rating" value="2" /> 2
+          <input type="radio" name="rating" value="3" /> 3
+          <input type="radio" name="rating" value="4" /> 4
+          <input type="radio" name="rating" value="5" /> 5
+          <input type="radio" name="rating" value="6" /> 6
+          <input type="radio" name="rating" value="7" /> 7
+          <input type="radio" name="rating" value="8" /> 8
+          <input type="radio" name="rating" value="9" /> 9
+          <input type="radio" name="rating" value="10" checked /> 10
         </div>
         <div class="form-group">
           <h3>Comments about your experience</h3>
-          <textarea name="comments" id="" cols="30" rows="10" placeholder="Tell us what you liked and/or did not like">
+          <textarea
+            name="comments"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Tell us what you liked and/or did not like"
+          >
           </textarea>
         </div>
-        <input class="btn btn-info" value="submit" type="submit" name="submit" id="">
+        <input
+          class="btn btn-info"
+          value="submit"
+          type="submit"
+          name="submit"
+          id=""
+        />
       </form>
     </div>
-    
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
